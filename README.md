@@ -10,3 +10,9 @@ link - https://aka.ms/ssmsfullsetup
 Follow the steps: 
 1. Open SQL Server Management Studio->Connect the Server-> Create database.
 ![](demo/Step1.gif)
+
+2. Create Table. Table name is "tblUser"	(make sure to double check the table name from source code) Save it Ctrl+S. 
+![](demo/Step2.gif)
+
+3. Write a SQL Query. 
+![](demo/Step3.gif)
