@@ -29,7 +29,7 @@ namespace Login_Registration
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("UserAdd", conn);
+                SqlCommand cmd = new SqlCommand("UserFeed", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Feedback", txtFeed.Text.Trim());
                 cmd.BeginExecuteNonQuery();
@@ -38,6 +38,7 @@ namespace Login_Registration
                 //clear();
                 Form2 loginfrm = new Form2();
                 loginfrm.Show();
+                this.Hide();
             }
 
         }

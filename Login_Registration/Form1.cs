@@ -63,6 +63,10 @@ namespace Login_Registration
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("*** REGISTRATION COMPLETE ***");
                     clear();
+
+                    Form2 loginfrm = new Form2();
+                    loginfrm.Show();
+                    this.Hide();
                 }
             }
         }
