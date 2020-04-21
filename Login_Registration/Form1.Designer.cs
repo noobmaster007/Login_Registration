@@ -37,7 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmb_Salutation = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -135,7 +135,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmb_Salutation);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtAddress);
             this.groupBox1.Controls.Add(this.label1);
@@ -152,19 +152,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "User Registration";
             // 
-            // comboBox1
+            // cmb_Salutation
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmb_Salutation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_Salutation.FormattingEnabled = true;
+            this.cmb_Salutation.Items.AddRange(new object[] {
             "Mr.",
             "Mrs."});
-            this.comboBox1.Location = new System.Drawing.Point(158, 26);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(73, 26);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.Tag = "";
-            this.comboBox1.Text = "Mr.";
+            this.cmb_Salutation.Location = new System.Drawing.Point(158, 26);
+            this.cmb_Salutation.Name = "cmb_Salutation";
+            this.cmb_Salutation.Size = new System.Drawing.Size(73, 26);
+            this.cmb_Salutation.TabIndex = 9;
+            this.cmb_Salutation.Tag = "";
+            this.cmb_Salutation.Text = "Mr.";
             // 
             // label10
             // 
@@ -372,7 +372,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btn_submit;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmb_Salutation;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label12;

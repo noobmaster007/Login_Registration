@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+/*https://www.youtube.com/watch?v=hxOB5ALWQMQ&t=726s*/
 
 namespace Login_Registration
 {
@@ -65,7 +66,7 @@ namespace Login_Registration
             }
             else
             {
-                MessageBox.Show("Password is incorrect!");
+                MessageBox.Show("Username and Password is incorrect!");
 
             }
         }

@@ -52,13 +52,14 @@ namespace Login_Registration
                     conn.Open();
                     SqlCommand cmd = new SqlCommand("UserAdd", conn);
                     cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@Salutation",cmb_Salutation.GetItemText(cmb_Salutation.SelectedItem));
                     cmd.Parameters.AddWithValue("@FirstName", txtFirstName.Text.Trim());
                     cmd.Parameters.AddWithValue("@LastName", txtLastName.Text.Trim());
                     cmd.Parameters.AddWithValue("@ContactNumber", txtContact.Text.Trim());
                     cmd.Parameters.AddWithValue("@Address", txtAddress.Text.Trim());
                     cmd.Parameters.AddWithValue("@Username", txtUsername.Text.Trim());
                     cmd.Parameters.AddWithValue("@Password", txtPassword.Text.Trim());
-
+                    
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("*** REGISTRATION COMPLETE ***");
                     clear();
