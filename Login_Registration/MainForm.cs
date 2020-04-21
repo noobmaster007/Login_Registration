@@ -32,7 +32,7 @@ namespace Login_Registration
                 SqlCommand cmd = new SqlCommand("UserFeed", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Feedback", txtFeed.Text.Trim());
-                cmd.BeginExecuteNonQuery();
+                cmd.ExecuteNonQuery();
 
                 MessageBox.Show("FEEDBACK SUBMITTED!");
                 //clear();
